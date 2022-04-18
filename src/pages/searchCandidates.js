@@ -37,6 +37,7 @@ function SearchCandidates() {
 
     const searchByCandidateName = (e) => {
         e.preventDefault();
+        setError(false);
         if (candidateName.trim() === '') {
             return;
         }
